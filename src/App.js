@@ -6,6 +6,7 @@ import MainLayout from './components/Layout/MainLayout/MainLayout';
 import HeaderLayout from './components/Layout/HeaderLayout/HeaderLayout';
 import MyProjects from './pages/MyProjects/MyProjects';
 import MainContainer from './components/Containders/MainContainer/MainContainer';
+import MyShareProjects from './pages/MyShareProjects/MyShareProjects';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <MainContainer>
           <Routes>
             <Route path="/projects/my" element={<MyProjects />}/>
-            <Route path="/projects/share"/>
+            <Route path="/projects/share" element={<MyShareProjects />}/>
           </Routes>
         </MainContainer>
       </MainLayout>
