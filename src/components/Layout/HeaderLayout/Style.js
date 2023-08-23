@@ -1,33 +1,32 @@
 import { css } from "@emotion/react";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 export const SLayout = css`
     display: flex;
-    margin-bottom: 15px;
-    width: 100%;
-    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dbdbdb;
     background-color: #383d40;
 `;
 
 export const SContainer = css`
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    align-items: center;
     padding: 0px 15px;
     width: 1170px;
     height: 50px;
-    background-color: transparent;
 `;
 
 export const SLogo = css`
     display: flex;
     align-items: center;
+    cursor: pointer;
 `;
 
 export const SBrandname = css`
     color: #fff;
     font-size: 22px;
-    cursor: pointer;
 `;
 
 export const SVersion = css`
@@ -37,7 +36,6 @@ export const SVersion = css`
     font-size: 11px;
     font-weight: 400;
     color: #aaa;
-    cursor: pointer;
 `;
 
 export const SProfile = css`
@@ -49,8 +47,8 @@ export const SProfile = css`
     width: 124px;
     height: 50px;
     cursor: pointer;
-    &:active {
-        background-color: #333;
+    &:hover {
+        background-color: #0000001a;
     }
 `;
 

@@ -1,20 +1,26 @@
 import { Global } from '@emotion/react';
 import { Route, Routes } from 'react-router-dom';
 import { Reset } from 'styled-reset';
-import Layout from './components/Layout/Layout';
 import * as S from "./styles/commons";
+import MainLayout from './components/Layout/MainLayout/MainLayout';
+import HeaderLayout from './components/Layout/HeaderLayout/HeaderLayout';
+import MyProjects from './pages/MyProjects/MyProjects';
+import MainContainer from './components/Containders/MainContainer/MainContainer';
 
 function App() {
   return (
     <>
       <Reset />
       <Global styles={S.GSCommon} />
-      <Layout>
-        <Routes>
-          <Route path="/projects/my" />
-          <Route path="/projects/share"/>
-        </Routes>
-      </Layout>
+      <MainLayout>
+        <HeaderLayout />
+        <MainContainer>
+          <Routes>
+            <Route path="/projects/my" element={<MyProjects />}/>
+            <Route path="/projects/share"/>
+          </Routes>
+        </MainContainer>
+      </MainLayout>
     </>
   );
 }
