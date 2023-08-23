@@ -3,7 +3,7 @@ import { css } from "@emotion/react";
 export const SPageheader = css`
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 20px;
+    margin-bottom: 20px;
     border-bottom: 1px solid #dbdbdb;
     padding-bottom: 9px;
     width: 100%;

@@ -5,6 +5,7 @@ import TitleContainer from '../../components/TitleContainer/TitleContainer';
 import ProjectContainer from '../../components/ProjectContainer/ProjectContainer';
 import ProjectOption from '../../components/ProjectOption/ProjectOption';
 import ProjectSidebar from '../../components/Sidebars/ProjectSidebar/ProjectSidebar';
+import ProjectListBoard from '../../components/ProjectListBoard/ProjectListBoard';
 
 function MyProjects(props) {
     return (
@@ -14,6 +15,7 @@ function MyProjects(props) {
             </TitleContainer>
             <ProjectContainer>
                 <ProjectSidebar />
+                <ProjectListBoard />
             </ProjectContainer>
         </>
     );

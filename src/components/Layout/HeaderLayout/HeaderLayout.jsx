@@ -5,6 +5,7 @@ import * as S from "./Style";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import { useRecoilState } from 'recoil';
 import { isMenuOpenState } from '../../../stores/MenuStore';
+import profile from '../../../assets/profile.png';
 
 function HeaderLayout(props) {
     const [ isOpen, setIsOpen ] = useRecoilState(isMenuOpenState);
@@ -24,7 +25,7 @@ function HeaderLayout(props) {
                 <ul>
                     <li css={S.SProfile} onClick={handleMenuToggleClick}>
                         <span>
-                            <img css={S.SProfileimg} src="https://www.gravatar.com/avatar/6701f013160b53ae738d4686a4614043?d=retro" />
+                            <img css={S.SProfileimg} src={profile} />
                         </span>
                         <span css={S.SProfilename}>comet</span>
                         <AiOutlineCaretDown css={S.SCaret}/>
@@ -33,7 +34,7 @@ function HeaderLayout(props) {
                             <li css={S.SMenulist}>계정 설정하기</li>
                             <li css={S.SMenulist}>헬프데스크</li>
                             <li css={S.SDivider}></li>
-                            <li css={S.SLogout}>로그아웃</li>
+                            <li css={S.SMenulist}>로그아웃</li>
                         </ul>)}
                     </li>
                 </ul>

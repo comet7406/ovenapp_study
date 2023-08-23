@@ -82,30 +82,29 @@ export const SCaret = css`
 
 export const SDropdownmenu = css`
     position: absolute;
-    top: 100%;
-    left: -40px;
-    z-index: 1000;
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
     border: 1px solid rgba(0,0,0,.15);
     padding: 5px 0px;
-    font-size: 14px;
     min-width: 160px;
-    width: 164px;
-    height: 148px;
+    width: max-content;
     background-color: rgba(255, 255, 255,.95);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 `;
 
 export const SMenulist = css`
-    padding: 6px 22px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 6px 24px;
     height: 32px;
 `;
 
 export const SDivider = css`
-    margin: 5px 0px;
-    border: 1px solid #eee;
-`;
-
-export const SLogout = css`
-    padding: 6px 22px;
-    height: 32px;
+    margin: 9px 0px;
+    border-bottom: 1px solid #dbdbdb;
 `;
